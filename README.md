@@ -7,7 +7,7 @@ Link:https://ai.google.dev/gemini-api/docs/api-key
 Interfacing with Pre-trained Model
 
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv()            
 import streamlit as st
 import os
 import google.generativeai as genai
