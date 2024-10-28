@@ -5,17 +5,17 @@ AI Chemist is a cutting-edge mobile application designed to provide personalized
 _______________________________________________________________________________________________________________________________________________________________
 *Features*
 
-    Streamlit UI
+1.**Streamlit UI**
 
 An intuitive dashboard for inputting data and receiving real-time experiment recommendations.
 Dynamic data visualizations for easier interpretation.
 Export options for results in PDF or CSV formats, simplifying documentation.
 
-    Secure Configuration (dotenv)
+ 2.**Secure Configuration (dotenv)**
 
 Protect sensitive information, such as API keys and credentials, with dotenv for secure access and environment management.
 
-    Google Generative AI Insights
+3. **Google Generative AI Insights**
 
 Experiment Design: AI-generated plans based on lab conditions and goals.
 Data Analysis: Automated interpretations and hypothesis suggestions.
