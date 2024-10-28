@@ -46,6 +46,7 @@ The Google API key authorizes secure access to Google services. It ensures that 
 
 Set Up Google API Key: Visit the Google API Documentation for instructions on generating and configuring your key.
 Environment Configuration: Add the key to your .env file for secure management.
+Link:https://ai.google.dev/gemini-api/docs/api-key
 Launching the Application
 Start the App
 
@@ -56,7 +57,7 @@ streamlit run app.py
 Access the App
 
 Open a browser and go to:
-arduino
+
 Copy code
 http://localhost:8501
 Example Screenshots
