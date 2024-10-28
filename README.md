@@ -15,7 +15,7 @@ Chat-Based Assistance: Real-time, conversational guidance for experiment support
 Installation
 Clone the repository:
 
-git clone https://github.com/IkkiOcesn/SQL-AI.git
+git clone   (https://github.com/tanukhatiyan/AI_Chemist)
 Navigate to the project directory:
 
 
@@ -25,22 +25,22 @@ source venv/bin/activate  # for Linux/macOS
 venv\Scripts\activate  # for Windows
 Install the required Python dependencies:
 pip install -r requirements.txt
+Initialization of Google API Key
+The Google API key is a secure access token provided by Google, enabling developers to authenticate and interact with various Google APIs. It acts as a form of identification, allowing users to access specific Google services and resources. This key plays a crucial role in authorizing and securing API requests, ensuring that only authorized users can access and utilize Google's services.
+Click the provided link to access the following webpage.
+
+Link:https://ai.google.dev/gemini-api/docs/api-key
+
+Launching the Application:
+
+To host the application,  go to the terminal, type - streamlit run app.py
+Here app.py refers to a python script.
 
 
-Start the Backend:
 
-cd backend
-python run.py
-Start the Frontend:
-
-cd frontend
-npm start
-Access the Application:
-
-Once both backend and frontend are running, open your browser and navigate to:
-http://localhost:3000
+ open your browser and navigate to:
+http://localhost:8501
 ![Screenshot 2024-10-27 224301](https://github.com/user-attachments/assets/cad01007-f372-4821-9ac6-c1beaccab2a1)
 ![Screenshot 2024-10-27 224400](https://github.com/user-attachments/assets/664ddda0-1842-4a30-afc6-6178e51a6a63)
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
