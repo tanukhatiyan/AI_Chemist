@@ -11,11 +11,11 @@ An intuitive dashboard for inputting data and receiving real-time experiment rec
 Dynamic data visualizations for easier interpretation.
 Export options for results in PDF or CSV formats, simplifying documentation.
 
- 2.**Secure Configuration (dotenv)**
+2.**Secure Configuration (dotenv)**
 
 Protect sensitive information, such as API keys and credentials, with dotenv for secure access and environment management.
 
-3. **Google Generative AI Insights**
+3.**Google Generative AI Insights**
 
 Experiment Design: AI-generated plans based on lab conditions and goals.
 Data Analysis: Automated interpretations and hypothesis suggestions.
