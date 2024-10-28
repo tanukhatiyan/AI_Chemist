@@ -1,59 +1,46 @@
-# AI_Chemist
-Pioneering the Future of Chemical Science with Gemini Vision Pro
-Install the required libraries
-Run the command: pip install -r requirements.txt
-Generate Google API Key
-Link:https://ai.google.dev/gemini-api/docs/api-key
-Interfacing with Pre-trained Model
+AI_Chemist_App
+AI Chemist is a cutting-edge mobile application crafted to offer personalized chemical solutions and experimental recommendations utilizing the sophisticated Gemini Pro model. This app harnesses the power of artificial intelligence to evaluate user input, laboratory conditions, and research objectives, providing customized experiment designs, chemical synthesis routes, and insightful data analysis. The main goal of AI Chemist is to enhance research efficiency and innovation in the field of chemistry through intelligent, data-driven guidance and support.
+Features
+Streamlit UI: Intuitive dashboard for inputting data, receiving real-time experiment recommendations, and viewing dynamic data visualizations. Export results as PDFs or CSVs for easy documentation.
 
-from dotenv import load_dotenv
-load_dotenv()            
-import streamlit as st
-import os
-import google.generativeai as genai
-from PIL import Image
+Secure Config (dotenv): Protect sensitive data like API keys and credentials with dotenv, ensuring secure access and environment management.
 
-genai.configure(api_key=os.getenv("Google_API_KEY"))
-def input_image_setup(uploaded_file):
-    if uploaded_file is not None:
-       bytes_data=uploaded_file.getvalue()
-       image_parts =[
-           {
-               "mime_type": uploaded_file.type,
-               "data": bytes_data
-           }
+Google Generative AI Insights:
 
-       ]
-       return image_parts
-    else:
-       raise FileNotFoundError("No file uploaded")
-input_prompt="""
+Experiment Design: AI-generated experiment plans tailored to lab conditions and goals.
+Data Analysis: Automated interpretation and hypothesis suggestions.
+Synthesis Pathways: Customizable routes for chemical synthesis.
+Chat-Based Assistance: Real-time, conversational guidance for experiment support.
 
-You are an expert pharmacetical/Chemist where you need to see the tablets from the image and, also provide the details of every drug/tablets items with below format
+Installation
+Clone the repository:
 
-1. Examine the image carefully and identify the tablets depicted.
+git clone https://github.com/IkkiOcesn/SQL-AI.git
+Navigate to the project directory:
 
-2. Describe the uses and functionalities of each tablet shown in the image.
 
-3. Provide information on the intended purposes, features, and typical applications of the tablets.
-4. If possible, include any notable specifications or distinguishing characteristics of each tablet.
- 5. Ensure clarity and conciseness in your descriptions, focusing on key details and distinguishing fa
+Create a virtual environment:
+python3 -m venv venv
+source venv/bin/activate  # for Linux/macOS
+venv\Scripts\activate  # for Windows
+Install the required Python dependencies:
+pip install -r requirements.txt
 
-"""
-Model Deployment
-We deploy our model using the Streamlit framework, a powerful tool for building and sharing data applications quickly and easily. With Streamlit, we can create interactive web applications that allow users to interact with our models in real-time, providing an intuitive and seamless experience.
-st.set_page_config(page_title="AI Chemist App")
-st.header("AI Chemist App")
-input=st.text_input("Input Prompt:",key="input")
-uploaded_file=st.file_uploader("Choose an image...",type=["jpg","jpeg","png"])
-image=""
-if uploaded_file is not None:
-    image=input_image_setup(uploaded_file)
-    st.image(uploaded_file,caption="Uploaded Image",use_column_width=True)
-submit=st.button("tell me")   
-if submit:
-    image_data=input_image_setup(uploaded_file)
-    response=get_gemini_repsonse(input_prompt,image_data,input)
-    st.subheader("The Response is")
-    st.write(response)
-To host the application,  go to the terminal, type - streamlit run app.py    
+
+Start the Backend:
+
+cd backend
+python run.py
+Start the Frontend:
+
+cd frontend
+npm start
+Access the Application:
+
+Once both backend and frontend are running, open your browser and navigate to:
+http://localhost:3000
+![Screenshot 2024-10-27 224301](https://github.com/user-attachments/assets/cad01007-f372-4821-9ac6-c1beaccab2a1)
+![Screenshot 2024-10-27 224400](https://github.com/user-attachments/assets/664ddda0-1842-4a30-afc6-6178e51a6a63)
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
