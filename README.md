@@ -1,9 +1,9 @@
-**AI Chemist App**
+# AI_Chemist_App#
 _________________________________________________________________________________________________________________________________________________________
 
 AI Chemist is a cutting-edge mobile application designed to provide personalized chemical solutions and experimental recommendations. Built on the advanced Gemini Pro model, AI Chemist leverages artificial intelligence to analyze user inputs, laboratory conditions, and research objectives, delivering tailored experiment designs, chemical synthesis pathways, and insightful data analysis. Its core mission is to enhance research efficiency and innovation in the field of chemistry through intelligent, data-driven guidance.
 _______________________________________________________________________________________________________________________________________________________________
-*Features*
+## Features
 
 1.**Streamlit UI**
 
@@ -22,7 +22,7 @@ Data Analysis: Automated interpretations and hypothesis suggestions.
 Synthesis Pathways: Customizable chemical synthesis routes.
 Chat-Based Assistance: Real-time, conversational guidance for experiment support.
 ______________________________________________________________________________________________________________________________________________________________
-*Installation*
+## Installation
 _________________________________________________________________________________________________________________________________________________
 Clone the Repository
 
@@ -41,12 +41,12 @@ For Windows:
     python -m venv venv
     venv\Scripts\activate
 ____________________________________________________________________________________________________________________________________________________________
-*Install Required Dependencies*
+## Install Required Dependencies
 
 
     pip install -r requirement.txt
 ___________________________________________________________________________________________________________________________________________________________
-*Google API Key Setup*
+ ## Google API Key Setup
 
 The Google API key authorizes secure access to Google services. It ensures that only authorized users can interact with Google’s resources through the AI Chemist app.
 
@@ -54,21 +54,21 @@ Set Up Google API Key: Visit the Google API Documentation for instructions on ge
 Environment Configuration: Add the key to your .env file for secure management.
 Link:https://ai.google.dev/gemini-api/docs/api-key
 ___________________________________________________________________________________________________________________________________________________________
-*Launching the Application*
+## Launching the Application
 Start the App
 
 In the terminal, run:
 
     streamlit run app.py
 ___________________________________________________________________________________________________________________________________________________________
-*Access the App*
+## Access the App
 
 Open a browser and go to:
 
 
 http://localhost:8501
 ___________________________________________________________________________________________________________________________________________________________
-Example Screenshots
+## Example Screenshots
 
 ![Screenshot 2024-10-27 224301](https://github.com/user-attachments/assets/9a33376d-12b0-4e8b-ac56-02c4944ff68a)
 ![Screenshot 2024-10-27 224400](https://github.com/user-attachments/assets/545e69ac-7e49-4714-b071-e8d0a1adb801)
