@@ -1,4 +1,4 @@
-# AI_Chemist_App#
+# AI_Chemist_App
 _________________________________________________________________________________________________________________________________________________________
 
 AI Chemist is a cutting-edge mobile application designed to provide personalized chemical solutions and experimental recommendations. Built on the advanced Gemini Pro model, AI Chemist leverages artificial intelligence to analyze user inputs, laboratory conditions, and research objectives, delivering tailored experiment designs, chemical synthesis pathways, and insightful data analysis. Its core mission is to enhance research efficiency and innovation in the field of chemistry through intelligent, data-driven guidance.
